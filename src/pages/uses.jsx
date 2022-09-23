@@ -29,89 +29,101 @@ export default function Uses() {
   return (
     <>
       <Head>
-        <title>Uses - Spencer Sharp</title>
+        <title>Lasercats - technologies</title>
         <meta
           name="description"
-          content="Software I use, gadgets I love, and other things I recommend."
+          content="Les technologies que nous utilisons."
         />
       </Head>
       <SimpleLayout
-        title="Software I use, gadgets I love, and other things I recommend."
-        intro="I get asked a lot about the things I use to build software, stay productive, or buy to fool myself into thinking I’m being productive when I’m really just procrastinating. Here’s a big list of all of my favorite stuff."
+        title="Les technologies que nous utilisons"
+        intro="Impossible de les présenter toutes : chaque projet amène sont lot de nouveauté, chaque client ses spécificités. On s'adapte, à l'écoute des besoins mais nous avons quelques technologies de prédilection.  Dés la phase de devis, nous nous mettrons d'accord avec vous sur les technologies, en prenant le temps de peser le pour et le contre. "
       >
         <div className="space-y-20">
-          <ToolsSection title="Workstation">
-            <Tool title="16” MacBook Pro, M1 Max, 64GB RAM (2021)">
-              I was using an Intel-based 16” MacBook Pro prior to this and the
-              difference is night and day. I’ve never heard the fans turn on a
-              single time, even under the incredibly heavy loads I put it
-              through with our various launch simulations.
-            </Tool>
-            <Tool title="Apple Pro Display XDR (Standard Glass)">
-              The only display on the market if you want something HiDPI and
-              bigger than 27”. When you’re working at planetary scale, every
-              pixel you can get counts.
-            </Tool>
-            <Tool title="IBM Model M SSK Industrial Keyboard">
-              They don’t make keyboards the way they used to. I buy these any
-              time I see them go up for sale and keep them in storage in case I
-              need parts or need to retire my main.
-            </Tool>
-            <Tool title="Apple Magic Trackpad">
-              Something about all the gestures makes me feel like a wizard with
-              special powers. I really like feeling like a wizard with special
-              powers.
-            </Tool>
-            <Tool title="Herman Miller Aeron Chair">
-              If I’m going to slouch in the worst ergonomic position imaginable
-              all day, I might as well do it in an expensive chair.
-            </Tool>
-          </ToolsSection>
           <ToolsSection title="Development tools">
-            <Tool title="Sublime Text 4">
-              I don’t care if it’s missing all of the fancy IDE features
-              everyone else relies on, Sublime Text is still the best text
-              editor ever made.
-            </Tool>
-            <Tool title="iTerm2">
-              I’m honestly not even sure what features I get with this that
-              aren’t just part of the macOS Terminal but it’s what I use.
-            </Tool>
-            <Tool title="TablePlus">
-              Great software for working with databases. Has saved me from
-              building about a thousand admin interfaces for my various projects
-              over the years.
+            <Tool title="Visual Studio Code">
+              Question de goût et de formation. Si le dev' client nécessite un tuilage fin dans le code, il est possible de prendre un temps en live-coding avec Visual Studio Live Share. 
             </Tool>
           </ToolsSection>
           <ToolsSection title="Design">
             <Tool title="Figma">
-              We started using Figma as just a design tool but now it’s become
-              our virtual whiteboard for the entire company. Never would have
-              expected the collaboration features to be the real hook.
+              Pour le moment, meilleur outils. Pour un prototypage rapide, des retours clients faciles, trouver le design qui convient n'est pas un problème. 
             </Tool>
           </ToolsSection>
           <ToolsSection title="Productivity">
-            <Tool title="Alfred">
+            <Tool title="Notion">
+              Inévitable. Et pour les équipes de dev' avec qui on callabore, cet outils étant répandu, il a toujours été facile de partager des docs de travail. 
+            </Tool>
+            <Tool title="Click-up">
+             On gère nos projets d'ici. Finis les kanbans, Asana ou Trelo... Par ce qu'on privilégie le travail au TJM, on ne peut se passer d'un outils de suivi du temps de travail.
+            </Tool>
+            <Tool title="Gather">
+              Si vous faites vos visios sur skype, essayez Gather...
+            </Tool>
+          </ToolsSection>
+          
+          <ToolsSection title="Front-end">
+            <Tool title="React">
+              Dans l'agence, c'est le framework natif de nos front-end. On l'utilise pour les dashboard/CRM, mais on glisse petit  à petit vers Next.js même pour les webApps.
+            </Tool>
+            <Tool title="React-Native + X-code">
+             Pour les apps mobile, c'est une base de laquelle on n'a pas bougé. Par contre, pour shipper correctement les app sur l'Apple store, il a fallu monter en compétence dans l'environnement dev' Apple. Deux de nos dev' ont leur license chez Apple, des notions de swift et une bonne connaissance de X-Code. Pour assurer la livraison finale de vos apps. 
+            </Tool>
+            <Tool title="Next-js">
+              Certains étaient passé par Gatsby.js. Mais c'est le framework Next.js aui est devenu incontournable chez nous. Il nous a permis d'accélérer certaines de nos apps en scindant les rendus côté client / côté serveur, améliorer considérablement la SEO en servant des pages statiques, optimisé la gestion des images... On explore encore: mettre en cache les données serveurs, sécurisation toujours plus forte des dashboards. Chouchou des frontistes.
+            </Tool>
+            <Tool title="ERB (Embedded Ruby)">
+              Quand la team backend n'a pas envie de s'encombrer d'un front trop lourd et que l'architecture ruby/react n'est pas optimale, du ruby injecté directement dans le html a un rendu final sans concession. 
+            </Tool>
+            <Tool title="Spip">
+              Vous ne trouverez pas de devellopeur PHP ici... mais on a quelque vieilles technos dans nos cartons. SPIP, un système de publication pour l'Internet codé en... français. Un langage qui nous a permis d'intervenir sur deux sites de nos clients sans changer leur habitudes et les faire passer à Worpress. 
+            </Tool>
+            <Tool title="Prismic">
+              En parlant de système de publication ; dans la famille des CMS headless, quand c'est l'architecture jamstack qui l'emporte, on utilise en ce moment Prismic. Léger, simple, son API ne nous a pas encore deçu.  
+            </Tool>
+          </ToolsSection>
+        
+          <ToolsSection title="Back-end">
+            <Tool title="Ruby-on-Rails">
               It’s not the newest kid on the block but it’s still the fastest.
               The Sublime Text of the application launcher world.
             </Tool>
-            <Tool title="Reflect">
-              Using a daily notes system instead of trying to keep things
-              organized by topics has been super powerful for me. And with
-              Reflect, it’s still easy for me to keep all of that stuff
-              discoverable by topic even though all of my writing happens in the
-              daily note.
+          </ToolsSection>
+          <ToolsSection title="BDD">
+            <Tool title="Firebase">
+              It’s not the newest kid on the block but it’s still the fastest.
+              The Sublime Text of the application launcher world.
             </Tool>
-            <Tool title="SavvyCal">
-              Great tool for scheduling meetings while protecting my calendar
-              and making sure I still have lots of time for deep work during the
-              week.
-            </Tool>
-            <Tool title="Focus">
-              Simple tool for blocking distracting websites when I need to just
-              do the work and get some momentum going.
+            <Tool title="SupaBase">
+              It’s not the newest kid on the block but it’s still the fastest.
+              The Sublime Text of the application launcher world.
             </Tool>
           </ToolsSection>
+          <ToolsSection title="Automation">
+            <Tool title="Zapier">
+              It’s not the newest kid on the block but it’s still the fastest.
+              The Sublime Text of the application launcher world.
+            </Tool>
+          </ToolsSection>
+          <ToolsSection title="Web 3">
+            <Tool title="Remix">
+              It’s not the newest kid on the block but it’s still the fastest.
+              The Sublime Text of the application launcher world.
+            </Tool>
+            <Tool title="Hardhat">
+              It’s not the newest kid on the block but it’s still the fastest.
+              The Sublime Text of the application launcher world.
+            </Tool>
+            <Tool title="Alchemy">
+              It’s not the newest kid on the block but it’s still the fastest.
+              The Sublime Text of the application launcher world.
+            </Tool>
+            <Tool title="IPFS">
+              It’s not the newest kid on the block but it’s still the fastest.
+              The Sublime Text of the application launcher world.
+            </Tool>
+          </ToolsSection>
+
         </div>
       </SimpleLayout>
     </>

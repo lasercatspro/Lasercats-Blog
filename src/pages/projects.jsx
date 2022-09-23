@@ -1,49 +1,49 @@
 import Image from 'next/future/image'
 import Head from 'next/head'
-
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import logoAnimaginary from '@/images/logos/animaginary.svg'
-import logoCosmos from '@/images/logos/cosmos.svg'
-import logoHelioStream from '@/images/logos/helio-stream.svg'
-import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
+
+import logoCitesia from '@/images/logos/citesia.svg'
+import logoMTN from '@/images/logos/mtn.svg'
+import logoSplio from '@/images/logos/splio.svg'
+import logoNym from '@/images/logos/nym.svg'
+import logoJana from '@/images/logos/jana.svg'
 
 const projects = [
   {
-    name: 'Citesia',
+    // name: 'Citesia',
     description:
       'Refondre une plateforme de crowdfunding immobilier.',
-    link: { href: 'https://lasercats.collective.work/case-study/citesia-httpscitesiafr-rm', label: 'citesia.fr' },
-    logo: logoPlanetaria,
+    link: { href: 'https://lasercats.collective.work/case-study/citesia-httpscitesiafr-rm', label: 'collective.work/citesia' },
+    logo: logoCitesia,
   },
   {
-    name: 'Splio',
+    // name: 'Splio',
     description:
       "Synchroniser des données d'un saas de marketing automation.",
-    link: { href: 'https://lasercats.collective.work/case-study/synchronisation-de-donnees-de-splio-wk', label: 'splio.com' },
-    logo: logoAnimaginary,
+    link: { href: 'https://lasercats.collective.work/case-study/synchronisation-de-donnees-de-splio-wk', label: 'collective.work/splio' },
+    logo: logoSplio,
   },
   {
-    name: 'MTN',
+    // name: 'MTN',
     description:
       'Réaliser un dashboard, une webapp et une application ios et android pour un opérateur télécom.',
-    link: { href: 'https://lasercats.collective.work/case-study/realisation-dune-application-ios-et-android-xm', label: "mtn.com" },
-    logo: logoHelioStream,
+    link: { href: 'https://lasercats.collective.work/case-study/realisation-dune-application-ios-et-android-xm', label: "collective.work/mtn" },
+    logo: logoMTN,
   },
   {
-    name: 'NymTech',
+    // name: 'NymTech',
     description:
       "Créer l'identité graphique d'un projet web3 protégeant la vie privée.",
-    link: { href: 'https://lasercats.collective.work/case-study/vers-la-levee-de-fonds-vn', label: 'nymtech.net' },
-    logo: logoCosmos,
+    link: { href: 'https://lasercats.collective.work/case-study/vers-la-levee-de-fonds-vn', label: 'collective.work/nymtech' },
+    logo: logoNym,
   },
   {
-    name: 'Jana',
+    // name: 'Jana',
     description:
       "Développer le Channel Manager d'un saas de conciergerie.",
-    link: { href: 'https://lasercats.collective.work/case-study/developpement-dun-channel-manager-gr', label: 'jana-concierge.com' },
-    logo: logoOpenShuttle,
+    link: { href: 'https://lasercats.collective.work/case-study/developpement-dun-channel-manager-gr', label: 'collective.work/jana-concierge' },
+    logo: logoJana,
   },
 ]
 
@@ -70,7 +70,7 @@ export default function Projects() {
       </Head>
       <SimpleLayout
         title="Les projets emblématiques de l'agence, passés et en cours"
-        intro="Depuis 4 ans, nous avons réalisé une palette d'applications pour des utilisations très spécifiques. Du marketing automation aux CRM taillés sur mesures, du site vitrine aux API multi-plateformes, voicis quelques réalisations qui parlent du travail accompli."
+        intro="Depuis 4 ans, nous avons réalisé une palette d'application taillées sur mesure pour les besoins de nos clients. Du marketing automation aux CRM from scratch, du site vitrine aux API multi-plateformes, voicis quelques réalisations qui parlent du travail accompli."
       >
         <ul
           role="list"
@@ -78,11 +78,11 @@ export default function Projects() {
         >
           {projects.map((project) => (
             <Card as="li" key={project.name}>
-              <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+              <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-white dark:ring-0">
                 <Image
                   src={project.logo}
                   alt=""
-                  className="h-8 w-8"
+                  className="h-11 w-11"
                   unoptimized
                 />
               </div>

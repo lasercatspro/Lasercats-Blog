@@ -8,7 +8,6 @@ import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
 import {
   TwitterIcon,
-  InstagramIcon,
   GitHubIcon,
   LinkedInIcon,
 } from '@/components/SocialIcons'
@@ -17,10 +16,13 @@ import image2 from '@/images/photos/crayon.png'
 import image3 from '@/images/photos/cactus.png'
 import image4 from '@/images/photos/montre.png'
 import image5 from '@/images/photos/robot.png'
-import logoAirbnb from '@/images/logos/airbnb.svg'
-import logoFacebook from '@/images/logos/facebook.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
-import logoStarbucks from '@/images/logos/starbucks.svg'
+
+import logoCitesia from '@/images/logos/citesia.svg'
+import logoMTN from '@/images/logos/mtn.svg'
+import logoSplio from '@/images/logos/splio.svg'
+import logoNym from '@/images/logos/nym.svg'
+import logoJana from '@/images/logos/jana.svg'
+
 import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
 import { formatDate } from '@/lib/formatDate'
@@ -71,18 +73,6 @@ function BriefcaseIcon(props) {
   )
 }
 
-function ArrowDownIcon(props) {
-  return (
-    <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" {...props}>
-      <path
-        d="M4.75 8.75 8 12.25m0 0 3.25-3.5M8 12.25v-8.5"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  )
-}
 
 function Article({ article }) {
   return (
@@ -121,13 +111,6 @@ function Newsletter() {
         Vous pouvez nous contacter via la plateforme <a className='font-bold hover:text-blue-700' href='https://lasercats.collective.work/' target-blanck> Collective</a> ou directement sur le mail de l'agence :
       </p>
       <div className="flex justify-center mt-6">
-        {/* <input
-          type="email"
-          placeholder="Email address"
-          aria-label="Email address"
-          required
-          className="min-w-0 flex-auto appearance-none rounded-md border border-zinc-900/10 bg-white px-3 py-[calc(theme(spacing.2)-1px)] shadow-md shadow-zinc-800/5 placeholder:text-zinc-400 focus:border-teal-500 focus:outline-none focus:ring-4 focus:ring-teal-500/10 dark:border-zinc-700 dark:bg-zinc-700/[0.15] dark:text-zinc-200 dark:placeholder:text-zinc-500 dark:focus:border-teal-400 dark:focus:ring-teal-400/10 sm:text-sm"
-        /> */}
         <Button className="">
         <a href="mailto:contact@lasercats.fr" className="px-3">
         contact@lasercats.fr
@@ -142,41 +125,47 @@ function Resume() {
   let resume = [
     {
       company: 'Citesia',
-      title: 'CEO',
-      logo: logoPlanetaria,
-      start: '2019',
+      title: 'Acquisition client, BackOffice, WebApp',
+      logo: logoCitesia,
+      start: '2020',
       end: {
-        label: 'Present',
+        label: "Aujourd'hui",
         dateTime: new Date().getFullYear(),
       },
     },
     {
       company: 'MTN',
-      title: 'Product Designer',
-      logo: logoAirbnb,
-      start: '2014',
-      end: '2019',
+      title: 'IOS/Android App, WebApp & BackOffice',
+      logo: logoMTN,
+      start: '2019',
+      end: '2022',
     },
     {
       company: 'Splio',
-      title: 'iOS Software Engineer',
-      logo: logoFacebook,
-      start: '2011',
-      end: '2014',
+      title: 'Marketing automation',
+      logo: logoSplio,
+      start: '2019',
+      end: {
+        label: "Aujourd'hui",
+        dateTime: new Date().getFullYear(),
+      },
     },
     {
       company: 'Jana',
-      title: 'Shift Supervisor',
-      logo: logoStarbucks,
-      start: '2008',
-      end: '2011',
+      title: 'Channel Manager',
+      logo: logoJana,
+      start: '2020',
+      end: {
+        label: "Aujourd'hui",
+        dateTime: new Date().getFullYear(),
+      },
     },
     {
       company: 'Nymtech',
-      title: 'Shift Supervisor',
-      logo: logoStarbucks,
-      start: '2008',
-      end: '2011',
+      title: 'Identity, landing',
+      logo: logoNym,
+      start: '2018',
+      end: '2018',
     },
   ]
 
@@ -184,13 +173,13 @@ function Resume() {
     <div className="p-6 border rounded-2xl border-zinc-100 dark:border-zinc-700/40">
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
         <BriefcaseIcon className="flex-none w-6 h-6" />
-        <span className="ml-3">Work</span>
+        <span className="ml-3">Projets</span>
       </h2>
       <ol className="mt-6 space-y-4">
         {resume.map((role, roleIndex) => (
           <li key={roleIndex} className="flex gap-4">
-            <div className="relative flex items-center justify-center flex-none w-10 h-10 mt-1 rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-              <Image src={role.logo} alt="" className="h-7 w-7" unoptimized />
+            <div className="relative flex items-center justify-center flex-none w-12 h-12 mt-1 rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-white dark:ring-0">
+              <Image src={role.logo} alt="" className="h-11 w-11" unoptimized />
             </div>
             <dl className="flex flex-wrap flex-auto gap-x-2">
               <dt className="sr-only">Company</dt>
@@ -220,10 +209,6 @@ function Resume() {
           </li>
         ))}
       </ol>
-      {/* <Button href="#" variant="secondary" className="w-full mt-6 group">
-        Download CV
-        <ArrowDownIcon className="w-4 h-4 transition stroke-zinc-400 group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
-      </Button> */}
     </div>
   )
 }
@@ -283,11 +268,6 @@ export default function Home({ articles }) {
               aria-label="Follow on Twitter"
               icon={TwitterIcon}
             />
-            {/* <SocialLink
-              href="https://instagram.com"
-              aria-label="Follow on Instagram"
-              icon={InstagramIcon}
-            /> */}
             <SocialLink
               href="https://github.com/lasercatspro"
               aria-label="Follow on GitHub"
