@@ -115,21 +115,23 @@ function Newsletter() {
     >
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
         <MailIcon className="flex-none w-6 h-6" />
-        <span className="ml-3">Stay up to date</span>
+        <span className="ml-3">Nous contacter</span>
       </h2>
       <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-        Get notified when I publish something new, and unsubscribe at any time.
+        Vous pouvez nous contacter via la plateforme <a className='font-bold hover:text-blue-700' href='https://lasercats.collective.work/' target-blanck> Collective</a> ou directement sur le mail de l'agence :
       </p>
-      <div className="flex mt-6">
-        <input
+      <div className="flex justify-center mt-6">
+        {/* <input
           type="email"
           placeholder="Email address"
           aria-label="Email address"
           required
           className="min-w-0 flex-auto appearance-none rounded-md border border-zinc-900/10 bg-white px-3 py-[calc(theme(spacing.2)-1px)] shadow-md shadow-zinc-800/5 placeholder:text-zinc-400 focus:border-teal-500 focus:outline-none focus:ring-4 focus:ring-teal-500/10 dark:border-zinc-700 dark:bg-zinc-700/[0.15] dark:text-zinc-200 dark:placeholder:text-zinc-500 dark:focus:border-teal-400 dark:focus:ring-teal-400/10 sm:text-sm"
-        />
-        <Button type="submit" className="flex-none ml-4">
-          Join
+        /> */}
+        <Button className="">
+        <a href="mailto:contact@lasercats.fr" className="px-3">
+        contact@lasercats.fr
+            </a>
         </Button>
       </div>
     </form>
@@ -139,7 +141,7 @@ function Newsletter() {
 function Resume() {
   let resume = [
     {
-      company: 'Planetaria',
+      company: 'Citesia',
       title: 'CEO',
       logo: logoPlanetaria,
       start: '2019',
@@ -149,21 +151,28 @@ function Resume() {
       },
     },
     {
-      company: 'Airbnb',
+      company: 'MTN',
       title: 'Product Designer',
       logo: logoAirbnb,
       start: '2014',
       end: '2019',
     },
     {
-      company: 'Facebook',
+      company: 'Splio',
       title: 'iOS Software Engineer',
       logo: logoFacebook,
       start: '2011',
       end: '2014',
     },
     {
-      company: 'Starbucks',
+      company: 'Jana',
+      title: 'Shift Supervisor',
+      logo: logoStarbucks,
+      start: '2008',
+      end: '2011',
+    },
+    {
+      company: 'Nymtech',
       title: 'Shift Supervisor',
       logo: logoStarbucks,
       start: '2008',
@@ -211,10 +220,10 @@ function Resume() {
           </li>
         ))}
       </ol>
-      <Button href="#" variant="secondary" className="w-full mt-6 group">
+      {/* <Button href="#" variant="secondary" className="w-full mt-6 group">
         Download CV
         <ArrowDownIcon className="w-4 h-4 transition stroke-zinc-400 group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
-      </Button>
+      </Button> */}
     </div>
   )
 }
@@ -251,42 +260,41 @@ export default function Home({ articles }) {
     <>
       <Head>
         <title>
-          Spencer Sharp - Software designer, founder, and amateur astronaut
+          Lasercats - Agence de dévelloppeurs web, web3 et mobile
         </title>
         <meta
           name="description"
-          content="I’m Spencer, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms."
+          content="Nous sommes une équipe de 8 développeurs qui fabriquons en Bretagne et à Lyon des sites ainsi des applications web et mobiles."
         />
       </Head>
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Software designer, founder, and amateur astronaut.
+          Lasercats <br/>
+          Agence de dévelloppeurs web, web3 et mobile
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Spencer, a software designer and entrepreneur based in New York
-            City. I’m the founder and CEO of Planetaria, where we develop
-            technologies that empower regular people to explore space on their
-            own terms.
+          Nous sommes une équipe de 8 développeurs qui fabriquons en Bretagne et à Lyon des sites ainsi des applications web et mobiles.<br/>
+          Notre objectif est de vous construire des applications solides et simples d’utilisation pour faire croître votre activité.
           </p>
           <div className="flex gap-6 mt-6">
             <SocialLink
-              href="https://twitter.com"
+              href="https://twitter.com/LasercatsDev/"
               aria-label="Follow on Twitter"
               icon={TwitterIcon}
             />
-            <SocialLink
+            {/* <SocialLink
               href="https://instagram.com"
               aria-label="Follow on Instagram"
               icon={InstagramIcon}
-            />
+            /> */}
             <SocialLink
-              href="https://github.com"
+              href="https://github.com/lasercatspro"
               aria-label="Follow on GitHub"
               icon={GitHubIcon}
             />
             <SocialLink
-              href="https://linkedin.com"
+              href="https://fr.linkedin.com/company/lasercats"
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
             />

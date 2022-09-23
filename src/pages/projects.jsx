@@ -11,38 +11,38 @@ import logoPlanetaria from '@/images/logos/planetaria.svg'
 
 const projects = [
   {
-    name: 'Planetaria',
+    name: 'Citesia',
     description:
-      'Creating technology to empower civilians to explore space on their own terms.',
-    link: { href: 'http://planetaria.tech', label: 'planetaria.tech' },
+      'Refondre une plateforme de crowdfunding immobilier.',
+    link: { href: 'https://lasercats.collective.work/case-study/citesia-httpscitesiafr-rm', label: 'citesia.fr' },
     logo: logoPlanetaria,
   },
   {
-    name: 'Animaginary',
+    name: 'Splio',
     description:
-      'High performance web animation library, hand-written in optimized WASM.',
-    link: { href: '#', label: 'github.com' },
+      "Synchroniser des données d'un saas de marketing automation.",
+    link: { href: 'https://lasercats.collective.work/case-study/synchronisation-de-donnees-de-splio-wk', label: 'splio.com' },
     logo: logoAnimaginary,
   },
   {
-    name: 'HelioStream',
+    name: 'MTN',
     description:
-      'Real-time video streaming library, optimized for interstellar transmission.',
-    link: { href: '#', label: 'github.com' },
+      'Réaliser un dashboard, une webapp et une application ios et android pour un opérateur télécom.',
+    link: { href: 'https://lasercats.collective.work/case-study/realisation-dune-application-ios-et-android-xm', label: "mtn.com" },
     logo: logoHelioStream,
   },
   {
-    name: 'cosmOS',
+    name: 'NymTech',
     description:
-      'The operating system that powers our Planetaria space shuttles.',
-    link: { href: '#', label: 'github.com' },
+      "Créer l'identité graphique d'un projet web3 protégeant la vie privée.",
+    link: { href: 'https://lasercats.collective.work/case-study/vers-la-levee-de-fonds-vn', label: 'nymtech.net' },
     logo: logoCosmos,
   },
   {
-    name: 'OpenShuttle',
+    name: 'Jana',
     description:
-      'The schematics for the first rocket I designed that successfully made it to orbit.',
-    link: { href: '#', label: 'github.com' },
+      "Développer le Channel Manager d'un saas de conciergerie.",
+    link: { href: 'https://lasercats.collective.work/case-study/developpement-dun-channel-manager-gr', label: 'jana-concierge.com' },
     logo: logoOpenShuttle,
   },
 ]
@@ -62,15 +62,15 @@ export default function Projects() {
   return (
     <>
       <Head>
-        <title>Projects - Spencer Sharp</title>
+        <title>Projects - Lasercats</title>
         <meta
           name="description"
-          content="Things I’ve made trying to put my dent in the universe."
+          content="Les projets emblématiques de l'agence, passés et en cours."
         />
       </Head>
       <SimpleLayout
-        title="Things I’ve made trying to put my dent in the universe."
-        intro="I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved."
+        title="Les projets emblématiques de l'agence, passés et en cours"
+        intro="Depuis 4 ans, nous avons réalisé une palette d'applications pour des utilisations très spécifiques. Du marketing automation aux CRM taillés sur mesures, du site vitrine aux API multi-plateformes, voicis quelques réalisations qui parlent du travail accompli."
       >
         <ul
           role="list"
@@ -87,7 +87,7 @@ export default function Projects() {
                 />
               </div>
               <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
-                <Card.Link href={project.link.href}>{project.name}</Card.Link>
+                <Card.Link href={project.link.href}>{project.name} </Card.Link>
               </h2>
               <Card.Description>{project.description}</Card.Description>
               <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
