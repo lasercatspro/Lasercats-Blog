@@ -7,7 +7,8 @@ Spotlight is a [Tailwind UI](https://tailwindui.com) site template built using [
 To get started with this template, first install the npm dependencies:
 
 ```bash
-yarn```
+yarn
+```
 
 Next, create a `.env.local` file in the root of your project and set the `NEXT_PUBLIC_SITE_URL` variable to your site's public URL:
 
