@@ -83,7 +83,7 @@ export default function About() {
                   </p>
               </p>
               <p>
-                A ce jour, nous sommes 8 dev&apos;. 6 en Bretagne, 2 autres à Bruxelle et Lyon. Petit à petit, des spécialités ont vu le jour, ce qui nous permet de répondre à une grande palette de projet et surtout d&apos;assurer une bonne review du code en interne.
+                A ce jour, nous sommes 8 dev&apos;. 6 en Bretagne, 2 autres à Bruxelles et Lyon. Petit à petit, des spécialités ont vu le jour, ce qui nous permet de répondre à une grande palette de projet et surtout d&apos;assurer une bonne review du code en interne.
                 Nous travaillons au maximum en binôme : c&apos;est une manière pour nous de forcer une bonne lisibilité de notre code, de corriger les petites inattentions, d&apos;avoir un œil extérieur quand des difficultés voient le jour et de ne surtout pas rester bloquer.
               </p>
               <p>
