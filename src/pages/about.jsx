@@ -65,17 +65,32 @@ export default function About() {
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
-                Nos bureaux
+                Depuis 2018, la petite équipe des Lasercats s’est monté en s’appuyant sur deux technologies: Ruby et React. L’expérience métier n’était pas la même : dix ans au compteur pour notre CTO, une année de formation pour les autres. Coder ensemble a rapidement été une partie de plaisir et de l’apprentissage continu { }
+                <Link
+        href="/uses"
+        className="underline"
+      >
+        (voir section Technos)
+      </Link>
+     . L’amitié est un ciment entre nous qui nous permet de sortir de situations délicate... quand error 404 nous ronge les nerfs depuis plusieurs heures par exemple !
               </p>
               <p>
-                Méthodes de travail
+                Après avoir occupé l’appartement le plus grand à notre disposition, testé les limites anthropologiques de la visio, puis occupé plusieurs open-space, l’agence a désormais ses bureaux à Rennes.
+                C’est au 
+                <br/> <br/> <p className="text-center font-bold">
+                  2 avenue Jean Janvier<br/>
+                35 000 Rennes
+                  </p>
               </p>
               <p>
-                Présentation de l'équipe
+                A ce jour, nous sommes 8 dev’. 6 en Bretagne, 2 autres à Bruxelle et Lyon. Petit à petit, des spécialités ont vu le jour, ce qui nous permet de répondre à une grande palette de projet et surtout d’assurer une bonne review du code en interne.
+                Nous travaillons au maximum en binôme : c’est une manière pour nous de forcer une bonne lisibilité de notre code, de corriger les petites inattentions, d’avoir un œil extérieur quand des difficultés voient le jour et de ne surtout pas rester bloquer.
               </p>
               <p>
-                Tarification - Devis
+                Nous privilégions le mode régie avec nos clients (TJM 550e). Mais certains projets nécessitent d’autres types de prestation. Ici, nous travaillons aussi sur ce qui nous plaît. Si vous venez à nous avec un projet qui a du sens, il est toujours temps de discuter.
               </p>
+
+
             </div>
           </div>
           <div className="lg:pl-20">
@@ -98,7 +113,7 @@ export default function About() {
                 icon={MailIcon}
                 className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
               >
-                       contact@lasercats.fr
+                contact@lasercats.fr
 
               </SocialLink>
             </ul>

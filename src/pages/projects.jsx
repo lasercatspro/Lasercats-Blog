@@ -20,7 +20,7 @@ const projects = [
   {
     // name: 'Splio',
     description:
-      "Synchroniser des données d'un saas de marketing automation.",
+      "Synchroniser les données d'un Saas de marketing automation.",
     link: { href: 'https://lasercats.collective.work/case-study/synchronisation-de-donnees-de-splio-wk', label: 'collective.work/splio' },
     logo: logoSplio,
   },
