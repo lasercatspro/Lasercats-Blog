@@ -41,7 +41,7 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>L'agence - Lasercats</title>
+        <title>L&apos;agence - Lasercats</title>
         <meta
           name="description"
           content="Lasercats - Agence de dévelloppeurs web, web3 et mobile"

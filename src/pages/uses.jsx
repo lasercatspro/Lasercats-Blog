@@ -121,7 +121,7 @@ Fini l&apos;enfer des onglets et sous-onglets de Google Analytics 🙀, on n&apo
               Inévitable.
             </Tool>
             <Tool title="Click-up">
-              On gère nos projets d&apos;ici. Finis les kanbans, Asana ou Trelo... Par ce qu&apos;on privilégie le travail au TJM, on ne peut se passer d'un outils de suivi du temps de travail.
+              On gère nos projets d&apos;ici. Finis les kanbans, Asana ou Trelo... Par ce qu&apos;on privilégie le travail au TJM, on ne peut se passer d&apos;un outils de suivi du temps de travail.
             </Tool>
             <Tool title="Gather">
               Si vous faites encore vos visios sur skype, essayez Gather...

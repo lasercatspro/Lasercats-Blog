@@ -84,7 +84,7 @@ function Article({ article }) {
         {formatDate(article.date)}
       </Card.Eyebrow>
       <Card.Description>{article.description}</Card.Description>
-      <Card.Cta>Read article</Card.Cta>
+      <Card.Cta>Lire l&apos;article</Card.Cta>
     </Card>
   )
 }
@@ -108,7 +108,7 @@ function Newsletter() {
         <span className="ml-3">Nous contacter</span>
       </h2>
       <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-        Vous pouvez nous contacter via la plateforme <a className='font-bold hover:text-blue-700' href='https://lasercats.collective.work/' target-blank> Collective</a> ou directement sur le mail de l'agence :
+        Vous pouvez nous contacter via la plateforme <a className='font-bold hover:text-blue-700' href='https://lasercats.collective.work/' > Collective</a> ou directement sur le mail de l&apos;agence :
       </p>
       <div className="flex justify-center mt-6">
         <Button className="">
