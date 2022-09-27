@@ -3,43 +3,43 @@ import Head from 'next/head'
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
 
-import logoCitesia from '@/images/logos/citesia.svg'
+import logoCitesia from '@/images/logos/citesia.png'
 import logoMTN from '@/images/logos/mtn.svg'
-import logoSplio from '@/images/logos/splio.svg'
-import logoNym from '@/images/logos/nym.svg'
-import logoJana from '@/images/logos/jana.svg'
+import logoSplio from '@/images/logos/splio.png'
+import logoNym from '@/images/logos/nym.png'
+import logoJana from '@/images/logos/jana.png'
 
 const projects = [
   {
-    // name: 'Citesia',
+    name: 'Citesia',
     description:
       'Refondre une plateforme de crowdfunding immobilier.',
     link: { href: 'https://lasercats.collective.work/case-study/citesia-httpscitesiafr-rm', label: 'collective.work/citesia' },
     logo: logoCitesia,
   },
   {
-    // name: 'Splio',
+    name: 'Splio',
     description:
       "Synchroniser les données d'un Saas de marketing automation.",
     link: { href: 'https://lasercats.collective.work/case-study/synchronisation-de-donnees-de-splio-wk', label: 'collective.work/splio' },
     logo: logoSplio,
   },
   {
-    // name: 'MTN',
+    name: 'MTN',
     description:
       'Réaliser un dashboard, une webapp et une application ios et android pour un opérateur télécom.',
     link: { href: 'https://lasercats.collective.work/case-study/realisation-dune-application-ios-et-android-xm', label: "collective.work/mtn" },
     logo: logoMTN,
   },
   {
-    // name: 'NymTech',
+    name: 'NYM Tech',
     description:
       "Créer l'identité graphique d'un projet web3 protégeant la vie privée.",
     link: { href: 'https://lasercats.collective.work/case-study/vers-la-levee-de-fonds-vn', label: 'collective.work/nymtech' },
     logo: logoNym,
   },
   {
-    // name: 'Jana',
+    name: 'Jana',
     description:
       "Développer le Channel Manager d'un saas de conciergerie.",
     link: { href: 'https://lasercats.collective.work/case-study/developpement-dun-channel-manager-gr', label: 'collective.work/jana-concierge' },
@@ -62,7 +62,7 @@ export default function Projects() {
   return (
     <>
       <Head>
-        <title>Projects - Lasercats</title>
+        <title>Projets - Lasercats</title>
         <meta
           name="description"
           content="Les projets emblématiques de l'agence, passés et en cours."
@@ -70,7 +70,7 @@ export default function Projects() {
       </Head>
       <SimpleLayout
         title="Les projets emblématiques de l'agence, passés et en cours"
-        intro="Depuis 4 ans, nous avons réalisé une palette d'application taillées sur mesure pour les besoins de nos clients. Du marketing automation aux CRM from scratch, du site vitrine aux API multi-plateformes, voicis quelques réalisations qui parlent du travail accompli."
+        intro="Depuis 2018, nous avons réalisé une palette d'application taillées sur mesure pour les besoins de nos clients. Du marketing automation aux CRM from scratch, du site vitrine aux API multi-plateformes, voicis quelques réalisations qui parlent du travail accompli."
       >
         <ul
           role="list"
@@ -78,20 +78,20 @@ export default function Projects() {
         >
           {projects.map((project) => (
             <Card as="li" key={project.name}>
-              <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-white dark:ring-0">
+              <div className="relative z-10 flex items-center justify-center w-12 h-12 bg-white rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-white dark:ring-0">
                 <Image
                   src={project.logo}
-                  alt=""
-                  className="h-11 w-11"
-                  unoptimized
+                  alt={project.name}
+                  className="rounded-full w-11 h-11"
+                  
                 />
               </div>
               <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
                 <Card.Link href={project.link.href}>{project.name} </Card.Link>
               </h2>
               <Card.Description>{project.description}</Card.Description>
-              <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
-                <LinkIcon className="h-6 w-6 flex-none" />
+              <p className="relative z-10 flex mt-6 text-sm font-medium transition text-zinc-400 group-hover:text-teal-500 dark:text-zinc-200">
+                <LinkIcon className="flex-none w-6 h-6" />
                 <span className="ml-2">{project.link.label}</span>
               </p>
             </Card>
