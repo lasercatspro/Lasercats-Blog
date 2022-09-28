@@ -44,7 +44,7 @@ export default function Uses() {
 
           <ToolsSection title="Front-end">
             <Tool title="React">
-              Dans l&apos;agence, c&apos;est le framework natif de nos front-end. On l&apos;utilise pour les dashboard/CRM, et désormais presque toujours avec le framework NextJS.
+              Dans le collectif, c&apos;est le framework natif de nos front-end. On l&apos;utilise pour les dashboard/CRM, et désormais presque toujours avec le framework NextJS.
             </Tool>
             <Tool title="React-Native + X-code">
               Pour les apps mobile, c&apos;est une base de laquelle on n&apos;a pas bougé. Par contre, pour shipper correctement les app sur l&apos;Apple store, il a fallu monter en compétence dans l&apos;environnement dev&apos; d&apos;Apple. Deux de nos dev&apos; ont leur license chez Apple, des notions de swift et une bonne connaissance de X-Code. Pour assurer la livraison finale de vos apps.

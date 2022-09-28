@@ -108,13 +108,13 @@ function Newsletter() {
         <span className="ml-3">Nous contacter</span>
       </h2>
       <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-        Vous pouvez nous contacter via la plateforme <a className='font-bold hover:text-blue-700' href='https://lasercats.collective.work/' > Collective</a> ou directement sur le mail de l&apos;agence :
+        Vous pouvez nous contacter via la plateforme <a className='font-bold hover:text-blue-700' href='https://lasercats.collective.work/' > Collective</a> ou directement sur le mail du collectif contact@lasercats.fr
       </p>
       <div className="flex justify-center mt-6">
-        <Button className="">
-        <a href="mailto:contact@lasercats.fr" className="px-3">
-        contact@lasercats.fr
-            </a>
+        <Button className="w-full">
+          <a href="mailto:contact@lasercats.fr" className="px-3">
+            Nous écrire
+          </a>
         </Button>
       </div>
     </form>
@@ -125,7 +125,7 @@ function Resume() {
   let resume = [
     {
       company: 'Citesia',
-      title: 'Acquisition client, BackOffice, WebApp',
+      title: 'Refondre une plateforme de crowdfunding immobilier',
       logo: logoCitesia,
       start: '2020',
       end: {
@@ -135,14 +135,14 @@ function Resume() {
     },
     {
       company: 'MTN',
-      title: 'IOS/Android App, WebApp & BackOffice',
+      title: "Réaliser un dashboard, une webapp et une application ios et android pour un opérateur télécom",
       logo: logoMTN,
       start: '2019',
       end: '2022',
     },
     {
       company: 'Splio',
-      title: 'Marketing automation',
+      title: "Synchroniser les données d'un Saas de marketing automation",
       logo: logoSplio,
       start: '2019',
       end: {
@@ -152,7 +152,7 @@ function Resume() {
     },
     {
       company: 'Jana',
-      title: 'Channel Manager',
+      title: "Développer le Channel Manager d'un saas de conciergerie",
       logo: logoJana,
       start: '2020',
       end: {
@@ -162,10 +162,10 @@ function Resume() {
     },
     {
       company: 'Nymtech',
-      title: 'Identity, landing',
+      title: "Créer l'identité graphique d'un projet web3 protégeant la vie privée",
       logo: logoNym,
       start: '2018',
-      end: '2018',
+      end: '',
     },
   ]
 
@@ -178,8 +178,8 @@ function Resume() {
       <ol className="mt-6 space-y-4">
         {resume.map((role, roleIndex) => (
           <li key={roleIndex} className="flex gap-4">
-            <div className="relative flex items-center justify-center flex-none w-12 h-12 mt-1 rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-white dark:ring-0">
-              <Image src={role.logo} alt="" className="h-11 w-11" unoptimized />
+            <div className="relative flex items-center justify-center flex-none w-11 h-11 mt-1 rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-white dark:ring-0">
+              <Image src={role.logo} alt="" className="h-10 w-10" unoptimized />
             </div>
             <dl className="flex flex-wrap flex-auto gap-x-2">
               <dt className="sr-only">Company</dt>
@@ -193,14 +193,13 @@ function Resume() {
               <dt className="sr-only">Date</dt>
               <dd
                 className="ml-auto text-xs text-zinc-400 dark:text-zinc-500"
-                aria-label={`${role.start.label ?? role.start} until ${
-                  role.end.label ?? role.end
-                }`}
+                aria-label={`${role.start.label ?? role.start} until ${role.end.label ?? role.end
+                  }`}
               >
                 <time dateTime={role.start.dateTime ?? role.start}>
                   {role.start.label ?? role.start}
                 </time>{' '}
-                <span aria-hidden="true">—</span>{' '}
+                <span aria-hidden="true">{role.end == '' ? "" : "—"}</span>{' '}
                 <time dateTime={role.end.dateTime ?? role.end}>
                   {role.end.label ?? role.end}
                 </time>
@@ -209,6 +208,13 @@ function Resume() {
           </li>
         ))}
       </ol>
+      <div className="flex justify-center mt-8">
+        <Button className="w-full">
+          <Link   href="/projects" className="px-3">
+            Tous les projets
+          </Link>
+        </Button>
+      </div>
     </div>
   )
 }
@@ -245,7 +251,7 @@ export default function Home({ articles }) {
     <>
       <Head>
         <title>
-          Lasercats - Agence de dévelloppeurs web, web3 et mobile
+          Lasercats - Collectif de dévelopement web, web3 et mobile
         </title>
         <meta
           name="description"
@@ -255,23 +261,18 @@ export default function Home({ articles }) {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-          Lasercats <br/>
-          Agence de dévelloppeurs web, web3 et mobile
+            Lasercats <br />
+            Collectif de dévelopement web, web3 et mobile
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-          Nous sommes une équipe de 8 développeurs qui fabriquons en Bretagne, Bruxelles et à Lyon des sites ainsi des applications web et mobiles.<br/>
-          Notre objectif est de vous construire des applications solides et simples d’utilisation pour faire croître votre activité.
+            Nous sommes une équipe de 8 développeurs qui fabriquons en Bretagne, Bruxelles et à Lyon des sites ainsi que des applications web et mobiles.<br />
+            Notre objectif est de vous construire des applications solides et simples d’utilisation pour faire croître votre activité.
           </p>
           <div className="flex gap-6 mt-6">
             <SocialLink
               href="https://twitter.com/LasercatsDev/"
               aria-label="Follow on Twitter"
               icon={TwitterIcon}
-            />
-            <SocialLink
-              href="https://github.com/lasercatspro"
-              aria-label="Follow on GitHub"
-              icon={GitHubIcon}
             />
             <SocialLink
               href="https://fr.linkedin.com/company/lasercats"

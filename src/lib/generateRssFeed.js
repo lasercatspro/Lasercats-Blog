@@ -14,7 +14,7 @@ export async function generateRssFeed() {
 
   let feed = new Feed({
     title: author.name,
-    description: 'Lasercats. Agence de dévellopeur web, web3 et mobile',
+    description: 'Lasercats. Collectif de dévellopement web, web3 et mobile',
     author,
     id: siteUrl,
     link: siteUrl,
