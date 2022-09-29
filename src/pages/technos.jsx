@@ -37,7 +37,7 @@ export default function Uses() {
       </Head>
       <SimpleLayout
         title="Les technologies que nous utilisons"
-        intro="Impossible de les présenter toutes : chaque projet amène sont lot de nouveautés, chaque client ses spécificités. Voici quand même une présentation de nos technologies de prédilection.  Dés la phase de devis, nous nous mettrons d'accord avec vous sur les technologies, en prenant le temps de peser le pour et le contre. "
+        intro="Impossible de les présenter toutes : chaque projet amène sont lot de nouveautés, chaque client ses spécificités. Voici quand même une présentation de nos technologies de prédilection.  Dès la phase de devis, nous nous mettrons d'accord avec vous sur les technologies, en prenant le temps de peser le pour et le contre. "
       >
         <div className="space-y-20">
 

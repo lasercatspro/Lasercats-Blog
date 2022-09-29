@@ -255,7 +255,7 @@ export default function Home({ articles }) {
         </title>
         <meta
           name="description"
-          content="Nous sommes une équipe de 8 développeurs qui fabriquons en Bretagne, Bruxelles et à Lyon des sites ainsi des applications web et mobiles."
+          content="Nous sommes une équipe de 8 développeurs qui fabriquons en Bretagne, à Bruxelles et à Lyon des sites ainsi des applications web et mobiles."
         />
       </Head>
       <Container className="mt-9">
@@ -265,7 +265,7 @@ export default function Home({ articles }) {
             Collectif de dévelopement web, web3 et mobile
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            Nous sommes une équipe de 8 développeurs qui fabriquons en Bretagne, Bruxelles et à Lyon des sites ainsi que des applications web et mobiles.<br />
+            Nous sommes une équipe de 8 développeurs qui fabriquons en Bretagne, à Bruxelles et à Lyon des sites ainsi que des applications web et mobiles.<br />
             Notre objectif est de vous construire des applications solides et simples d’utilisation pour faire croître votre activité.
           </p>
           <div className="flex gap-6 mt-6">

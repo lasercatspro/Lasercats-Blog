@@ -65,7 +65,7 @@ export default function About() {
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
-                Depuis 2018, l&apos;équipe des Lasercats s&apos;est montée en s&apos;appuyant sur deux technologies: Ruby et React. L&apos;expérience métier n&apos;était pas la même : dix ans au compteur pour notre CTO, une année de formation pour les autres. Coder ensemble a rapidement été une partie de plaisir et de l&apos;apprentissage mutuel{" "}{ }
+                Depuis 2018, l&apos;équipe des Lasercats s&apos;est montée en s&apos;appuyant sur deux technologies: Ruby et React. L&apos;expérience métier n&apos;était pas la même : dix ans au compteur pour notre CTO, une année de formation pour les autres. Coder ensemble a rapidement été une partie de plaisir et d&apos;apprentissage mutuel{" "}{ }
                 <Link
         href="/uses"
         className="underline"

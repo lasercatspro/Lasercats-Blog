@@ -17,8 +17,8 @@ export const meta = {
 export default (props) => <ArticleLayout meta={meta} {...props} />
 
 
- Nous développons avec la maison dédition La Volte un outil décriture collaborative qui permet d’écrire des variations et des prolongements de récits à plusieurs mains. Cet outil reprend les mêmes principes (et une partie de la technologie) qu’un outil bien connu des développeurs : git. 
-Voici un premier article où nous explorons **la gestion de l'historique dun texte.**
+ Nous développons avec la maison d'édition La Volte un outil d'écriture collaborative qui permet d’écrire des variations et des prolongements de récits à plusieurs mains. Cet outil reprend les mêmes principes (et une partie de la technologie) qu’un outil bien connu des développeurs : git. 
+Voici un premier article où nous explorons **la gestion de l'historique d'un texte.**
 
 Bonne lecture !
 
@@ -55,7 +55,7 @@ Pour ce qui est de l’historique, sur [github](github.com) (qui est un outil co
 Dans github, on voit uniquement la **précédente** modification, et on ne peux pas savoir combien de modifications il y a eu (il faut qu’on clique plusieurs fois dans la passé pour tout voir).
 *(Les exemples sont extraits du code source [Signal](https://signal.org/fr/) [hébergé sur github,](https://github.com/signalapp/Signal-Desktop/blame/0ba6a0926e45ca0e95661397557de10ba960c4e0/app/main.ts) une super application de messagerie chiffrée.)*
 
-<Image src={gif} alt="gif signal-desktop" />
+<Image unoptimized={true} src={gif} alt="gif signal-desktop" />
 
 De plus, on peut uniquement savoir quand il a été fait, par qui et dans quel contexte, mais pas le contenu…à moins d’ouvrir le fichier à chacune des étapes de sa vie, ce qui est fastidieux.
 

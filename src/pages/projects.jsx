@@ -70,7 +70,7 @@ export default function Projects() {
       </Head>
       <SimpleLayout
         title="Les projets emblématiques du collectif, passés et présents"
-        intro="Depuis 2018, nous avons réalisé une palette d'application taillées sur mesure pour les besoins de nos clients. Du marketing automation aux CRM from scratch, du site vitrine aux API multi-plateformes, voicis quelques réalisations qui parlent du travail accompli."
+        intro="Depuis 2018, nous avons réalisé une palette d'applications taillées sur mesure pour les besoins de nos clients. Du marketing automation aux CRM from scratch, du site vitrine aux API multi-plateformes, voicis quelques réalisations qui parlent du travail accompli."
       >
         <ul
           role="list"
