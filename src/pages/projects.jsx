@@ -82,7 +82,7 @@ export default function Projects() {
                 <Image
                   src={project.logo}
                   alt={project.name}
-                  className="rounded-full w-11 h-11"
+                  className="rounded-full w-10 h-10"
                   
                 />
               </div>
