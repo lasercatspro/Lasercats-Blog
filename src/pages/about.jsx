@@ -17,9 +17,9 @@ function SocialLink({ className, href, children, icon: Icon }) {
     <li className={clsx(className, 'flex')}>
       <Link
         href={href}
-        className="group flex text-sm font-medium text-zinc-800 transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500"
+        className="flex text-sm font-medium transition group text-zinc-800 hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500"
       >
-        <Icon className="h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-teal-500" />
+        <Icon className="flex-none w-6 h-6 transition fill-zinc-500 group-hover:fill-teal-500" />
         <span className="ml-4">{children}</span>
       </Link>
     </li>
@@ -55,40 +55,76 @@ export default function About() {
                 src={portraitImage}
                 alt=""
                 sizes="(min-width: 1024px) 32rem, 20rem"
-                className="aspect-square rotate-3 rounded-2xl object-cover dark:invert"
+                className="object-cover aspect-square rotate-3 rounded-2xl dark:invert"
               />
             </div>
           </div>
           <div className="lg:order-first lg:row-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Nous sommes les Lasercats, nous somme huit, nous développons vos applications
+              Nous sommes les Lasercats, nous somme huit, nous développons vos applications
             </h1>
-            <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
+            <div className="mt-6 text-base space-y-7 text-zinc-600 dark:text-zinc-400">
               <p>
-                Depuis 2018, l&apos;équipe des Lasercats s&apos;est montée en s&apos;appuyant sur deux technologies: Ruby et React. L&apos;expérience métier n&apos;était pas la même : dix ans au compteur pour notre CTO, une année de formation pour les autres. Coder ensemble a rapidement été une partie de plaisir et d&apos;apprentissage mutuel{" "}{ }
-                <Link
-        href="/uses"
-        className="underline"
-      >
-        (voir section Technos)
-      </Link>
-     . L&apos;amitié est un ciment entre nous qui nous permet de sortir de situations délicates... quand error 404 nous ronge les nerfs depuis plusieurs heures par exemple !
+                En 2018, l&apos;équipe des Lasercats s&apos;est montée en s&apos;appuyant sur deux technologies: Ruby et React. Depuis nous sommes passés de trois à huit développeurs. Nous sommes basés en Bretagne, mais aussi à Bruxelles et à Lyon. Nos bureaux sont à Rennes au 2 avenue Jean Janvier.
               </p>
               <p>
+                Coder ensemble a rapidement été une partie de plaisir et d&apos;apprentissage mutuel. L&apos;amitié est un ciment entre nous et nous permet de sortir de situations délicates... quand <span className='italic' >error 404</span> nous ronge les nerfs depuis plusieurs heures par exemple ! </p><p>Nous privilégions le travail en binôme. C&apos;est une manière pour nous de forcer une bonne lisibilité de notre code, de nous corriger mutuellement, d&apos;avoir un œil extérieur quand des difficultés voient le jour et de ne surtout pas rester bloquer.</p>
+              {/* <p>
                 Après avoir occupé l&apos;appartement le plus grand à notre disposition, testé les limites anthropologiques de la visio, puis occupé plusieurs open-space, le collectif a désormais ses bureaux à Rennes.
-                C&apos;est au  
-               <span className=" font-bold">
+                C&apos;est au
+                <span className="font-bold ">
                   {" "}2 avenue Jean Janvier,  35 000 Rennes
-               
-                  </span>
-              </p>
+
+                </span>
+              </p> */}
               <p>
-                A ce jour, nous sommes 8 développeurs. 6 en Bretagne, 2 autres à Bruxelles et Lyon. Petit à petit, des spécialités ont vu le jour, ce qui nous permet de répondre à une grande palette de projet et d&apos;assurer une bonne review du code en interne.
-                Nous privilégions le travail en binôme : c&apos;est une manière pour nous de forcer une bonne lisibilité de notre code, de corriger les petites inattentions, d&apos;avoir un œil extérieur quand des difficultés voient le jour et de ne surtout pas rester bloquer.
+                De la maquette au déploiement en production, notre équipe est{" "}
+                <Link
+                  href="/technos"
+                  className='underline'
+                >
+                  <a>
+                    complémentaire et expertes sur tous les aspects
+                  </a>
+                </Link>
+                . Nous pouvons ainsi répondre à{" "}
+                <Link
+                  href="/projects"
+                  className='underline'
+                >
+                  <a>
+                    une grande palette de projet
+                  </a>
+                </Link>
+                .
               </p>
-       
 
+              <p>
+                Nos spécialités:
 
+              </p>
+              <ul className='list-disc list-inside'>
+                <li>
+                  <span className='font-bold'>API&#xA0;
+                  </span>: Creation d&apos;API REST ou Graphql avec Ruby on Rails. Connexion et synchronisations d&apos;API tierces (facebook, twitter, linkedin, mangopay, hubspot, zapier…)
+                </li>
+                <li>
+                  <span className='font-bold'>BACKEND&#xA0;
+                  </span>: Architecture des bases de données, des relations entre les modèles et manipulations des données du côté serveur. Souvent avec Ruby on Rails et des bases Posgreql, mais aussi avec Firebase (pour les apps mobiles) ou d&apos;autres outils dans le cloud
+                </li>
+                <li>
+                  <span className='font-bold'>DASHBOARDS&#xA0;
+                  </span>: Conception avec Figma, des tests utilisateurs et les bonnes règles d&apos;UX/UI. Développement en front ReactJS/NextJS/Typescript
+                </li>
+                <li>
+                  <span className='font-bold'>MOBILE&#xA0;
+                  </span>: Conception et développement d’application mobile avec ReactNative. Déploiement sur le PlayStore et l&apos;AppleStore (Xcode).
+                </li>
+                <li>
+                  <span className='font-bold'>WEB3&#xA0;
+                  </span>: Nous connectons les applications à la blockchain et aux smartcontracts grâce aux technologies web3. Et (pour des side-projects) nous expérimentons le développement en solidity.
+                </li>
+              </ul>
             </div>
           </div>
           <div className="lg:pl-20">
@@ -103,10 +139,9 @@ export default function About() {
                 href="mailto:contact@lasercats.fr
                 "
                 icon={MailIcon}
-                className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
+                className="pt-8 mt-8 border-t border-zinc-100 dark:border-zinc-700/40"
               >
                 contact@lasercats.fr
-
               </SocialLink>
             </ul>
           </div>
