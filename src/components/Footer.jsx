@@ -24,7 +24,7 @@ export function Footer() {
                 <NavLink href="/about">Le collectif</NavLink>
                 <NavLink href="/articles">Articles</NavLink>
                 <NavLink href="/projects">Projets</NavLink>
-                <NavLink href="/uses">Technos</NavLink>
+                <NavLink href="/technos">Technos</NavLink>
               </div>
               <p className="text-sm text-zinc-400 dark:text-zinc-500">
                 {new Date().getFullYear()} Lasercats.

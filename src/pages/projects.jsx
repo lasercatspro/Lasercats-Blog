@@ -70,7 +70,7 @@ export default function Projects() {
       </Head>
       <SimpleLayout
         title="Les projets emblématiques du collectif, passés et présents"
-        intro="Depuis 2018, nous avons réalisé une palette d'applications taillées sur mesure pour les besoins de nos clients. Du marketing automation aux CRM from scratch, du site vitrine aux API multi-plateformes, voicis quelques réalisations qui parlent du travail accompli."
+        intro="Depuis 2018, nous avons réalisé une palette d'applications taillées sur mesure pour les besoins de nos clients. Du marketing automation aux CRM from scratch, du site vitrine aux API multi-plateformes, voici quelques réalisations qui parlent du travail accompli."
       >
         <ul
           role="list"
@@ -82,7 +82,7 @@ export default function Projects() {
                 <Image
                   src={project.logo}
                   alt={project.name}
-                  className="rounded-full w-10 h-10"
+                  className="w-10 h-10 rounded-full"
                   
                 />
               </div>

@@ -179,7 +179,7 @@ function Resume() {
         {resume.map((role, roleIndex) => (
           <li key={roleIndex} className="flex gap-4">
             <div className="relative flex items-center justify-center flex-none w-12 h-12 mt-1 rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-white dark:ring-0">
-              <Image src={role.logo} alt="" className="h-10 w-10 rounded-full" unoptimized />
+              <Image src={role.logo} alt="" className="w-10 h-10 rounded-full" unoptimized />
             </div>
             <dl className="flex flex-wrap flex-auto gap-x-2">
               <dt className="sr-only">Company</dt>
@@ -251,7 +251,7 @@ export default function Home({ articles }) {
     <>
       <Head>
         <title>
-          Lasercats - Collectif de dévelopement web, web3 et mobile
+          Lasercats - Collectif de développement web, web3 et mobile
         </title>
         <meta
           name="description"
@@ -262,7 +262,7 @@ export default function Home({ articles }) {
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
             Lasercats <br />
-            Collectif de dévelopement web, web3 et mobile
+            Collectif de développement web, web3 et mobile
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
             Nous sommes une équipe de 8 développeurs qui fabriquons en Bretagne, à Bruxelles et à Lyon des sites ainsi que des applications web et mobiles.<br />

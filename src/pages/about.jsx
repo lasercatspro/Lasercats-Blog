@@ -84,7 +84,7 @@ export default function About() {
                   className='underline'
                 >
                   <a>
-                    complémentaire et expertes sur tous les aspects
+                    complémentaire et experte sur tous les aspects
                   </a>
                 </Link>
                 . Nous pouvons ainsi répondre à{" "}
@@ -93,7 +93,7 @@ export default function About() {
                   className='underline'
                 >
                   <a>
-                    une grande palette de projet
+                    une grande palette de projets
                   </a>
                 </Link>
                 .
@@ -101,28 +101,27 @@ export default function About() {
 
               <p>
                 Nos spécialités:
-
               </p>
               <ul className='list-disc list-inside'>
                 <li>
                   <span className='font-bold'>API&#xA0;
-                  </span>: Creation d&apos;API REST ou Graphql avec Ruby on Rails. Connexion et synchronisations d&apos;API tierces (facebook, twitter, linkedin, mangopay, hubspot, zapier…)
+                  </span>: Creation d&apos;API REST ou Graphql avec Ruby on Rails. Connexion et synchronisation d&apos;API tierces (facebook, twitter, linkedin, mangopay, hubspot, zapier…)
                 </li>
                 <li>
                   <span className='font-bold'>BACKEND&#xA0;
-                  </span>: Architecture des bases de données, des relations entre les modèles et manipulations des données du côté serveur. Souvent avec Ruby on Rails et des bases Posgreql, mais aussi avec Firebase (pour les apps mobiles) ou d&apos;autres outils dans le cloud
+                  </span>: Architecture des bases de données, des relations entre les modèles et manipulation des données du côté serveur. Souvent avec Ruby on Rails et des bases Posgreql, mais aussi avec Firebase (pour les apps mobiles) ou d&apos;autres outils dans le cloud
                 </li>
                 <li>
                   <span className='font-bold'>DASHBOARDS&#xA0;
-                  </span>: Conception avec Figma, des tests utilisateurs et les bonnes règles d&apos;UX/UI. Développement en front ReactJS/NextJS/Typescript
+                  </span>: Conception des maquettes à l&apos;aide Figma, de tests utilisateurs et des bonnes règles d&apos;UX/UI. Intégration en front avec ReactJS/NextJS/Typescript.
                 </li>
                 <li>
                   <span className='font-bold'>MOBILE&#xA0;
-                  </span>: Conception et développement d’application mobile avec ReactNative. Déploiement sur le PlayStore et l&apos;AppleStore (Xcode).
+                  </span>: Conception et développement d’applications mobiles avec ReactNative. Déploiement sur le PlayStore et l&apos;AppleStore (Xcode).
                 </li>
                 <li>
                   <span className='font-bold'>WEB3&#xA0;
-                  </span>: Nous connectons les applications à la blockchain et aux smartcontracts grâce aux technologies web3. Et (pour des side-projects) nous expérimentons le développement en solidity.
+                  </span>: Grâce aux technologies web3, nous connectons les applications à la blockchain, aux smartcontracts, et aux wallets des utilisateurs. Et (pour des side-projects) nous expérimentons le développement en solidity.
                 </li>
               </ul>
             </div>
