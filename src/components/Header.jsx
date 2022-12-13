@@ -233,7 +233,7 @@ function Avatar({ large = false, className, ...props }) {
     >
       <Image
         src={avatarImage}
-        alt=""
+        alt="lasercats logo"
         sizes={large ? '4rem' : '2.25rem'}
         className={clsx(
           'rounded-full  object-cover  dark:invert',
